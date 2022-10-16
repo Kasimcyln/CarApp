@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".view.fragments.AddFragment">
+
+    <ImageView
+        android:id="@+id/ivSelect"
+        android:layout_width="203dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/select_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/brand"
+        android:drawablePadding="8dp"
+        android:hint="Brand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelect" />
+
+    <EditText
+        android:id="@+id/etModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/model"
+        android:drawablePadding="8dp"
+        android:hint="Model"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBrand" />
+
+    <EditText
+        android:id="@+id/etKm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/km"
+        android:drawablePadding="8dp"
+        android:hint="kilometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etModel" />
+
+    <EditText
+        android:id="@+id/etColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/color"
+        android:drawablePadding="8dp"
+        android:hint="Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etKm" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRecord"
+        android:layout_width="177dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_btn"
+        android:text="Save"
+        android:textColor="@color/btn_text_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
