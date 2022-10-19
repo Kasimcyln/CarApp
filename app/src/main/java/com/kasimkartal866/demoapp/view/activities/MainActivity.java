@@ -25,17 +25,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run () {
                 try {
-                    sleep(3000);
+                    sleep(100);
                 }catch (Exception e) {
 
                     e.printStackTrace();
                 }finally {
-/*
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(intent);
-                    finish();*/
-
                     String name = MyPref.getInstance().getUserName();
                     if(name.equals("")) {
                         Intent intent = new Intent(getApplicationContext(), LoginActivity.class);

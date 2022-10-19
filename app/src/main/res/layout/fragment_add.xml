@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
     tools:context=".view.fragments.AddFragment">
 
     <ImageView
@@ -15,8 +14,7 @@
         android:src="@drawable/select_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etBrand"
@@ -60,21 +58,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etModel" />
 
-    <EditText
-        android:id="@+id/etColor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/custom_input"
-        android:drawableLeft="@drawable/color"
-        android:drawablePadding="8dp"
-        android:hint="Color"
+    <Spinner
+        android:id="@+id/spColor"
+        android:layout_width="362dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTintMode="screen"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etKm" />
-
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRecord"
@@ -88,6 +83,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etColor" />
+        app:layout_constraintTop_toBottomOf="@+id/spColor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

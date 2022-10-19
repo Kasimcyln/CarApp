@@ -20,9 +20,4 @@
         android:name="com.kasimkartal866.demoapp.view.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
-    <fragment
-        android:id="@+id/editFragment"
-        android:name="com.kasimkartal866.demoapp.view.fragments.EditFragment"
-        android:label="fragment_edit"
-        tools:layout="@layout/fragment_edit" />
 </navigation>

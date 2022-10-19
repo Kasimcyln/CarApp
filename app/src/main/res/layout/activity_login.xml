@@ -92,7 +92,7 @@
         android:layout_marginEnd="112dp"
         android:gravity="center"
         android:text="Sign up now"
-        android:textColor="@color/red"
+        android:textColor="@color/purple_700"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

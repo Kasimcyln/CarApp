@@ -1,8 +1,11 @@
 package com.kasimkartal866.demoapp.orm;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +52,7 @@ public class RoomExecutor {
         }
     }
 
-    public List<Car> getBooks() {
+    public List<Car> getCars() {
         List<Car> cars = new ArrayList<>();
         try {
 
@@ -60,10 +63,10 @@ public class RoomExecutor {
         return cars;
     }
 
-    public List<Car> getBooksByUser(int userId) {
+    public List<Car> getCarsByUser(int userId) {
         List<Car> cars = new ArrayList<>();
         try {
-            if (userId == -1)
+            if (userId == 1)
                 cars = new GetCars_Async().execute().get();
             else
                 cars = new GetMyCars_Async().execute(userId).get();

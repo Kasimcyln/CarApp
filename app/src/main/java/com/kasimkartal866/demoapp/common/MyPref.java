@@ -25,7 +25,7 @@ public class MyPref {
         }
         return instance;
     }
-    //.
+
     public void saveUserName (String userName) {
         editor.putString(PREF_USER_NAME,userName).apply();
     }

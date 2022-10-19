@@ -10,10 +10,6 @@
         android:icon="@drawable/add_post"
         android:title="add" />
     <item
-        android:id="@+id/editFragment"
-        android:icon="@drawable/edit"
-        android:title="edit" />
-    <item
         android:id="@+id/myListFragment"
         android:icon="@drawable/my_list"
         android:title="my profile" />

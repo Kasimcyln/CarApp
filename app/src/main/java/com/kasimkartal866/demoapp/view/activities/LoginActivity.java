@@ -74,7 +74,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")

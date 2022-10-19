@@ -26,7 +26,7 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
-    private ArrayList<Car> data = new ArrayList<>();
+    private List<Car> data = new ArrayList<>();
     private Context context;
     public Adapter() {
     }
@@ -48,9 +48,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     }
 
     public void submitList(List<Car> cars) {
-        this.data.clear();
-        this.data.addAll(cars);
-        this.data.clear();
+        data = cars;
         this.notifyDataSetChanged();
 
     }
@@ -85,4 +83,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     public int getItemCount() {
         return data == null ? 0 : data.size();
     }
+
+
 }
